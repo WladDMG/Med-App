@@ -12,7 +12,7 @@ export class ConsultasController {
   constructor(private readonly consultasService: ConsultasService) {}
 
   @UseGuards(JwtAuthGuard)
-  @Get('me')
+  @Get('minhas')
   async minhasConsultas(@Request() req) {
     const pacienteId = req.user._id;
     return this.consultasService.findByPacienteId(pacienteId);
