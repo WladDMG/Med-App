@@ -80,9 +80,6 @@ export default function PerfilScreen() {
       <Text variant="titleMedium">Email</Text>
       <Text style={styles.info}>{user?.email}</Text>
 
-      <Text variant="titleMedium">Tipo</Text>
-      <Text style={styles.info}>{user?.role}</Text>
-
       <View style={styles.switchContainer}>
         <Text variant="titleMedium">Modo Escuro</Text>
         <Switch value={isDark} onValueChange={toggleTheme} />

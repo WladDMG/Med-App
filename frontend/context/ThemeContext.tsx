@@ -1,4 +1,3 @@
-// context/ThemeContext.tsx
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import { MD3DarkTheme, MD3LightTheme, Provider as PaperProvider } from 'react-native-paper';
 import {
@@ -38,6 +37,7 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
   };
 
   const paperTheme = isDark ? MD3DarkTheme : MD3LightTheme;
+
   const navigationTheme: NavigationTheme = {
     ...(isDark ? NavigationDarkTheme : NavigationDefaultTheme),
     colors: {
