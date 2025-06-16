@@ -1,0 +1,10 @@
+# Ignorar node_modules em backend e frontend
+backend/node_modules
+frontend/node_modules
+
+# Expo cache e arquivos temporários (frontend)
+frontend/.expo
+frontend/.expo-shared
+
+# Arquivos de log
+*.log
